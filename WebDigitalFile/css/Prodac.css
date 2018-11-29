@@ -1,0 +1,994 @@
+﻿/*Reiniciamos los Margenes para partir de cero*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background: url(../Images/bg_fondo.png);
+	
+}
+
+#div_formulario
+ {
+ 	padding-top:10px;
+ 	width:100%; 	
+ 	margin:0 auto 0 auto;
+ }
+ 
+#div_formulario_full
+ { 	 	
+ 	width:100%;
+    height: 387px;
+}
+
+#div_toolbar {
+    padding: 4px 10px 2px 10px;
+    background: url(../Images/summary.gif);
+    background-repeat: repeat;
+    border: solid 1px #408BB6;
+    text-align: left;
+}
+#div_toolbar2 {
+    padding: 4px 10px 2px 10px;
+    background: url(../Images/summary.gif);
+    background-repeat: repeat;
+    border: solid 1px #408BB6;
+    text-align: left;
+}
+
+#div_toolbar_popup
+{		
+	padding: 4px 10px 2px 10px;
+	background: url(../Images/summary.gif);
+	background-repeat:repeat;
+	border:solid 1px #408BB6;
+	text-align:center;
+}
+
+#div_toolbar2_popup
+{		
+	padding: 4px 10px 2px 10px;
+	background: url(../Images/summary.gif);
+	background-repeat:repeat;
+	border:solid 1px #408BB6;
+	text-align:center;
+}
+
+#div_toolbar td
+{
+	width: 55px;	
+	text-align: center;	
+	font-family: Arial, helvetica, sans-serif;
+	font-size:10px;
+	font-weight: bold;
+}
+
+#div_toolbar2 td
+{
+	width: 55px;	
+	text-align: center;	
+	font-family: Arial, helvetica, sans-serif;
+	font-size:10px;
+	font-weight: bold;
+}
+
+#div_filtro
+{		
+	margin: 10px 0px 0px 0px;
+	background: #CCCCCC repeat-x top;
+	color: #0000CC;
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+#div_filtro_full
+{
+	padding: 4px 10px 2px 10px;	
+	border-style: none solid solid solid;
+	border-width: 1px;
+	border-color: #408BB6;	
+	
+}
+
+
+
+#div_detalle_scroll
+{
+	
+	width:100%;
+	
+	
+}
+
+#div_gridview_trx
+{
+	border: 1px outset #666666;
+	background-color: #ccc;
+	overflow: scroll;
+	width: 100%;
+}
+
+#div_DetTarea
+{
+	width:100%;
+	padding: 2px 5px 2px 5px;
+	border-style: none solid solid solid;
+	border-width: 1px;
+	border-color: #408BB6;
+	text-align: left;
+}
+
+#toolbar
+{
+}
+
+#toolbar td
+{		
+	text-align:center;
+	padding: 0px 2px 2px 0px;	
+}
+
+.principal
+{	
+	font-family: trebuchet ms, helvetica, sans-serif;
+}
+.principal .titulo
+{	
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 3px 2px;
+	background: url(../Images/table_head.png) repeat-x top;	
+}
+
+.principal td
+{	
+	padding: 2px 2px 2px 5px;
+	font-weight: bold;
+	text-align:left;
+}
+.principal .tdHR100
+{
+	padding: 2px 2px 2px 2px;
+	font-weight: bold;
+	text-align: left;
+	background: #CCCCCC repeat-x top;
+	color: #0000CC;
+}
+
+#logout
+{
+	margin: 0 auto;
+	width: 55%;
+}
+
+#logout hr
+{	
+	border-width: 0.5px;
+	border-style: solid;
+	color: #FF6666;
+}
+#logout .banner
+{
+	height:50px;
+	background: url(../Images/visanet_logout.bmp) repeat-x top;
+}
+#logout .title
+{
+	padding: 10px 2px 5px 2px;
+	font-size: 20px;
+	color: #666666;
+	font-weight: bold;
+}
+#logout .description
+{
+	padding: 0px 2px 5px 2px;
+	font-size: 12px;
+	color: #666666;	
+}
+#logout .footer
+{
+	padding: 15px 2px 15px 2px;
+	text-align:center;
+}
+
+/* controles */
+.dropdownlist
+{	
+    border-color: #996699;
+    border-width: 1px;
+    border-style: solid;
+	font-size: 13px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	color: #3333FF;
+	font-weight: bold;
+}
+.button
+{
+	cursor:hand;
+	height: 20px;
+	border-style: outset;
+	border-width: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-position: top;
+	font-size: 11px;
+	font-weight: bold;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF6600;
+	border-top-color: #FF0000;
+	border-left-color: #FF0000;
+}
+
+.textbox_Dis
+{
+    border-style: none;
+    border-color: #C0C0C0;
+    font-size: 12px;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: #3333FF;
+    font-weight: bold;
+    background-color: #C0C0C0;
+}
+
+.textbox_100
+{	
+	font-size: 13px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	color: #3333FF;
+	font-weight: bold;
+}
+
+.textbox_100_d
+{
+    font-size: 13px;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: #3333FF;
+    font-weight: bold;
+    text-align: left;
+}
+
+.textbox_200
+{
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	color: #3333FF;
+	font-weight: bold;
+	background-color: #D5E2FF;
+	text-transform:uppercase;
+}
+
+.textbox_300
+{
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	color: #3333FF;
+	font-weight: bold;
+	background-color: #D4D4D4;
+	text-transform: uppercase;
+}
+
+.textbox_400
+{	
+	font-size: 8pt;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	vertical-align: middle;
+	border:none;
+	text-transform: uppercase;	
+	border: 0.5px solid #FFFFFF;
+}
+.textbox_500
+{
+	border: 0.5px solid #FFFFFF;
+	font-size: 8pt;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #0000CC;
+}
+
+.textarea
+{
+	background:url(../Images/bg_fondo.png) repeat-x top;
+	scrollbar-face-color: #ff8c00;
+	scrollbar-track-color: #fff8dc;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-highlight-color: #fff8dc;
+	scrollbar-shadow-color: #d2691e;
+	scrollbar-3dlight-color: #ffebcd;
+	scrollbar-darkshadow-color: #8b0000;
+	font-size: 11px;
+}
+
+
+/* 12-05-11*/
+
+.gridview
+{
+	padding: 0;
+	margin: 0;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	font-size: 8pt;
+	color: black;
+	border: 1px solid #000066;
+	border-collapse: collapse;
+}
+.gridview th
+{	
+	height: 10px;
+	background-position: top;	
+	color: #fff;
+	background: url(../Images/grd_head.png) repeat-x top;
+	border-left: solid 1px #FFFFFF;
+	font-weight: bold;
+	vertical-align:middle;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.gridview tr.def
+{
+	height: 10px;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.gridview tr.defazul
+{
+	height: 10px;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	text-transform: uppercase;
+	color: #3333FF;
+	text-transform: uppercase;
+}
+
+.gridview tr.defrojo
+{
+	height: 10px;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	text-transform: uppercase;
+	color: #FF0000;
+	text-transform: uppercase;
+}
+.gridview tr.alt
+{	
+	height: 10px;
+	vertical-align: middle;	
+	background:url(../Images/grid_alt.png) repeat-x top;
+}
+.gridview .sel
+{	
+	height: 10px;
+	vertical-align: middle;	
+	background:url(../Images/grd_sel.png) repeat-x top;
+}
+.gridview .footer
+{	
+	height: 10px;
+	vertical-align: middle;
+	background: url(../Images/grd_footer.png) repeat-x top;
+	color: #3333FF;
+	font-weight: bold;
+}
+
+/* Data Pager Styles */
+.gridview .pgr
+{	
+	font-weight: bold;
+	font-size:12pt;
+	background-position: top;
+	background: #CCCCCC repeat-x top;
+	text-transform: uppercase;
+}   
+.gridview .pgr table { margin: 5px 0; }   
+.gridview .pgr td
+{
+	border-width: 0;
+	padding: 0 6px;
+	border-left: solid 1px #666;
+	color: #003399;
+	line-height: 12px;
+}      
+.gridview .pgr a { color: #666; text-decoration: none; }   
+.gridview .pgr a:hover { color: #000; text-decoration: none; } 
+
+/* caja de key */
+
+.gridview .tdHFCenterKey
+{
+	font-size: 11px;
+	text-align: center;
+	color: #000099;
+}
+
+.gridview .tdHFLeft
+{		
+	padding-left:10px;
+	font-size: 11px;
+	text-align:left;
+}
+
+.gridview .tdHFCenter
+{		
+	font-size: 11px;
+	text-align:left;
+	text-align: center;
+}
+
+.gridview .tdHFRight
+{		
+	font-size: 11px;
+	text-align: right;
+	padding-right:10px;
+}
+
+.gridview .tdEstadoFIN
+{
+	color: #0000CC;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+}
+
+.gridview .tdEstadoLIQ
+{
+	color: #006600;
+	font-weight:bold;	
+	font-size: 11px;
+	text-align:center;
+}
+
+.gridview .tdEstadoPRV
+{
+	color: #FF9933;
+	font-weight:bold;	
+	font-size: 11px;
+	text-align:center;
+}
+
+.gridview .tdEstadoPEN
+{
+	color: #FF0000;
+	font-weight:bold;	
+	font-size: 11px;
+	text-align:center;
+}
+
+
+
+.labelMsg_Ok
+{
+	color: #339933;
+	font-weight: bold;
+	font-size: 10px;
+}
+.labelMsg_Err
+{
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.divCuentasLike
+{	
+	width: 95%; 
+	height: 160px; 
+	overflow-y:auto; 
+	overflow-x: scroll;
+	padding-bottom:2px;
+}
+.divMovimientos
+{	
+	width: 95%; 
+	height: 250px; 
+	overflow-y:auto; 
+	overflow-x: scroll;
+	padding-bottom:2px;
+}
+.divTableHead
+{
+	text-align:left;
+	padding-left:10px;
+	height:18px;
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	font-weight: bold;
+	background: url(../Images/table_head.png) repeat-x top;
+	color: #FFFFFF;
+	vertical-align:middle;
+}
+
+.divSPANCONTABLE
+{
+	height: 80px;
+	width: 590px;
+	border: 1px solid gray;
+	padding: 5px;
+	
+	color: #000099;
+	font-size: 11px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	
+	overflow-y: auto;
+	overflow-x: scroll;
+	scrollbar-face-color: #ff8c00;
+	scrollbar-track-color: #fff8dc;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-highlight-color: #fff8dc;
+	scrollbar-shadow-color: #d2691e;
+	scrollbar-3dlight-color: #ffebcd;
+	scrollbar-darkshadow-color: #8b0000;
+	
+}
+.divDetalleTRX
+{
+	height: 200px;
+	width: 900px;
+	border: 1px solid gray;
+	padding: 2px;
+	margin-bottom:10px;
+	overflow-y: auto;
+	overflow-x: scroll;
+	scrollbar-face-color: #ff8c00;
+	scrollbar-track-color: #fff8dc;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-highlight-color: #fff8dc;
+	scrollbar-shadow-color: #d2691e;
+	scrollbar-3dlight-color: #ffebcd;
+	scrollbar-darkshadow-color: #8b0000;
+}
+
+.TABLA_TELECREDITO
+{
+	text-align:right;	
+	padding: 0;
+	margin: 0;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	font-size: 8pt;
+	border: 1px solid #000066;
+	border-collapse: collapse;
+}
+
+.TABLA_TELECREDITO .label_th
+{	
+	height: 10px;
+	background-position: top;	
+	color: #fff;
+	background: url(../Images/grd_head.png) repeat-x top;
+	border-left: solid 1px #FFFFFF;
+	font-weight: bold;
+	vertical-align:middle;
+	text-align: right;
+	text-transform: uppercase;	
+}
+.TABLA_TELECREDITO td
+{
+	padding-right:10px;
+}
+
+.container
+{
+    border: solid 1px #808080;
+    border-width: 1px 0px;
+} 
+
+.label
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color:#193697;
+    font-weight:bold; 
+}
+
+.modal-dialog
+{
+    position:absolute;
+}
+
+/* dialog contents container */
+.modal-dialog .container
+{
+    font-family:tahoma,helvetica,arial,sans-serif;
+    font-size:11px;
+    background-color:#F2F9FF;
+	/*width: auto;*/
+    /*border:solid 1px #99aabd;*/
+ } 
+
+/* dialog header */
+.modal-dialog .header
+{
+    background:url(Images/sprite.gif) repeat-x 0px -1100px;	
+    height:18px;
+    padding-top:3px;
+}
+
+/* dialog header message */
+.modal-dialog .header .msg
+{
+    vertical-align:middle;
+    padding-left:6px;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+}         
+
+/* dialog body */
+.modal-dialog .body
+{
+    /*height:40px;*/
+    background-color:#F2F9FF;
+} 
+
+/* dialog body message */
+.modal-dialog .body h2
+{
+    padding:2px;
+	background-color: #F2F9FF;
+    font-size:13px;
+    text-align:center;
+    font-weight:normal;
+ }  
+
+/* dialog footer */
+.modal-dialog .footer
+{
+    height:36px;
+    background-color: #F2F9FF;
+    width : auto;
+} 
+
+/* dialog footer buttons */
+.modal-dialog .footer .right
+{
+    background-color: #F2F9FF;
+    float:right;
+    text-align:right;
+    padding-bottom:3px;
+    padding-right:6px;
+    
+} 
+
+/* dialog footer checkbox */
+.modal-dialog .footer .left
+{
+    background-color: #F2F9FF;
+    float:left;
+    text-align:left;
+    padding-bottom:3px;
+    padding-left:6px;
+} 
+
+/* dialog close */
+.modal-dialog .close
+{
+    right:4px;	
+    background: url(Images/icons.gif) no-repeat -732px 0px;	
+    width:16px;	
+    cursor:hand;	
+    position:absolute;	
+    top:2px;
+    height:16px;
+}
+
+/* dialog close hover */
+.modal-dialog .close:hover { background: url(Images/icons.gif) no-repeat -749px 0px;	}
+
+/* modal overlay */
+.modalBackground 
+{
+    background-color:Gray;
+    filter:alpha(opacity=20);
+    opacity:0.2;
+}  
+
+.div_toolbar
+{		
+	padding: 4px 10px 2px 10px;
+	background: url(../Images/summary.gif);
+	background-repeat:repeat;
+	border:solid 1px #408BB6;
+}
+
+.div_toolbar td
+{
+	width: 55px;	
+	text-align: center;	
+	font-family: Arial, helvetica, sans-serif;
+	font-size:10px;
+	font-weight: bold;
+}
+.tdpendiente
+{
+    padding: 0px;
+    color: #fff;
+    background: #FF3300 none no-repeat top;
+    border-left: solid 1px #525252;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+.textboxNumero
+{
+	padding-left: 5px;
+	border: 1px solid #999999;
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	text-align:right;
+	color: #000099;
+	font-weight: bold;
+	background: url(../Images/summary.gif);
+}
+
+.textboxImporte
+{
+    padding-left: 5px;
+    border: 1px solid #999999;
+    text-align: right;
+}
+
+
+.DivGrillaScroll
+{
+    OVERFLOW: auto;
+    scrollbar-face-color: #267DA7; 
+    scrollbar-highlight-color: #6685CA; 
+    scrollbar-shadow-color: #6685CA; 
+    scrollbar-3dlight-color:#FFFFFF;
+    scrollbar-arrow-color:#FFFFFF; 
+    scrollbar-track-color:#E5E5E5; 
+    scrollbar-drakshadow-color:#000000;
+}
+
+
+.Reg_def
+{	
+    border-style: solid solid none solid;
+    border-width: 1px; border-color: #808080; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    background-color: #267DA7;
+	
+}
+.Reg_alt  
+{		
+	background:url(../Images/grd_alt.png) repeat-x top;
+}
+
+.overFila
+{
+    background-position: center;
+    background: #CBFC9E;
+    color: #000080;
+    text-transform: uppercase;
+}
+.outFiladef
+{
+    background:url(../Images/grd_def.png) repeat-x top; 
+    text-transform: uppercase;
+}
+.outFilaalt
+{
+    background:url(../Images/grid_alt.png) repeat-x top; 
+    text-transform: uppercase;
+}
+
+
+.trCabecera
+{
+height: 10px;
+	background-position: top;	
+	color: #fff;
+	background: url(../Images/grd_head.png) repeat-x top;
+	border-left: solid 1px #FFFFFF;
+	font-weight: bold;
+	vertical-align:middle;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.trDetalleLeft
+{
+    height: 10px;
+    background-position: top;
+    color: #0033CC;
+    background: top;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.trDetalleRight
+{
+    height: 10px;
+    background-position: top;
+    color: #0033CC;
+    background: top;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.trDetalleCenter
+{
+    height: 10px;
+    background-position: top;
+    color: #0033CC;
+    background: top;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.overlay
+{
+    position: fixed;
+    z-index: 95;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #aaa;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}         
+.overlayContent         
+{           
+    z-index: 99;           
+    margin: 250px auto;           
+    width: 80px;           
+    height: 80px;         
+}         
+    .overlayContent h1         
+{             
+    font-size: 13px;             
+    font-weight: bold;             
+    color: #000;         
+}
+
+.updateProgress
+{
+	border-width: 1px;
+	border-style: solid;
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 180px;
+	height: 65px;
+}
+
+.tdCabeceraCuadreOperativo
+{
+    font-family: Arial; 
+    font-weight: bold; 
+    font-style: normal; 
+    font-size:9px;
+    vertical-align:middle;
+	text-align: center;
+	/*text-transform: uppercase;*/
+	
+}
+
+.tdCabeceraCuadreOperativo2
+{
+    font-family: Arial; 
+    font-weight: bold; 
+    font-style: normal; 
+    font-size:9px;
+    vertical-align:middle;
+	text-align: center;
+	text-transform: uppercase;
+	height: 10px;
+	
+}
+
+.tdCabeceraCuadreOperativoFormato1
+{ font-family: Arial; 
+  font-weight: normal; 
+  font-style: normal; 
+  font-size: 9px; 
+  cursor: pointer;
+  vertical-align:middle;
+  text-align: right;
+}
+.tdCabeceraCuadreOperativoFormatoFecha
+{ font-family: Arial; 
+  font-weight: normal; 
+  font-style: normal; 
+  font-size: 9px; 
+  cursor: pointer;
+  vertical-align:middle;
+  text-align: center;
+}
+
+.tdCabeceraCuadreOperativoFormato2
+{ font-family: Arial; 
+  font-weight: bold; 
+  font-style: normal; 
+  font-size: 8px; 
+  cursor: pointer;
+  vertical-align:middle;
+  text-align: center;
+}
+
+.tdDetalleCuadreOperativo
+{
+    font-family: Arial; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size:9px;
+    cursor: pointer;
+    vertical-align:middle;
+	text-align: right;
+	text-transform: uppercase;
+	
+}
+
+.tdDetalleFijoCuadreOperativo
+{
+    font-family: Arial; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size:9px;
+    vertical-align:middle;
+	text-align: left;
+	text-transform: uppercase;
+	
+}
+.tdImagenOperativo
+{ 
+  font-family: Arial; 
+  font-weight: normal; 
+  font-style: normal; 
+  font-size: 9px; 
+  cursor: pointer;
+  vertical-align:middle;
+  text-align: center;
+  width: 1%;
+}
+ .textboxNumero2
+{
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	text-align: left;
+	color: #000080;
+	font-weight: bold;
+}
+
+ .textboxImporte2
+{
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	text-align: right;
+	color: #000080;
+	font-weight: bold;
+}
+
+ .textboxImporte3
+{
+	font-size: 10px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	text-align: right;
+	color: #000080;
+	font-weight: bold;
+}
+
+.DropDownList2
+{
+	font-size: 12px;
+	font-family: trebuchet ms, helvetica, sans-serif;
+	color: #000080;
+	font-weight: bold;
+	
+}
+
+
